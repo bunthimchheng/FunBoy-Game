@@ -1,0 +1,256 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color:white;
+    color: black;
+    
+}
+
+label {
+    display: block;
+    margin-bottom: 20px;
+}
+input{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 500px;
+    margin-bottom: 20px;
+    border: 1px solid;
+    border-color: rgb(199, 183, 183);
+    border-radius: 10px;
+}
+input:hover {
+    cursor: pointer;
+}
+textarea {
+    padding-top: 10px;
+    padding-bottom:60px;
+    padding-right: 520px;
+    margin-bottom: 20px;
+    border: 1px solid;
+    border-color: rgb(199, 183, 183);
+    border-radius: 10px;
+}
+textarea:hover {
+    cursor: pointer;
+}
+
+.navbar {
+    background-color: white;
+    color: black;
+    display: flex;
+    justify-content: space-between;
+    padding: 25px 30px;
+    align-items: center;
+}
+
+.link ul{
+    display: flex;
+    gap: 20px;
+    
+}
+.link a{
+    color: #ff2c2c;
+    text-decoration: none;
+}
+.link li{
+    color: #ff2c2c;
+    text-decoration: none;
+    display: flex;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 20px;
+}
+
+.link a:hover {
+    color: #b90000;
+}
+
+.btn {
+    background-color: #ff2c2c;
+    padding: 15px 25px;
+    color: white;
+    border: #ff2c2c;
+    border-radius: 20px;
+    font-size: smaller;
+}
+
+
+.name h1 {
+    margin-bottom: 10px;text-align: center;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.name p{
+    text-align: center; margin-bottom: 50px;
+    color: rgb(109, 103, 103);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.card2 {
+    padding-left: 100px;
+    padding-right: 100px ;
+    display: flex;
+    justify-content: space-between;
+}
+.card2:hover{
+    cursor: pointer;
+}
+.card3 {
+    margin-bottom: 20px;
+}
+
+
+.info {
+    text-align: left;
+}
+
+.btn2{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.sendbtn{
+    background-color: #215cf2;
+    color: white;
+    padding: 8px 250px;
+    border: 1px solid;
+    border-radius: 8px;
+    font-size: larger;
+    border-color: #215cf2;
+   text-align: center;
+   
+}
+
+.sendbtn:hover {
+    cursor: pointer;
+    background-color: #1c32c0;
+    border-color: #1c32c0;
+}
+
+.info {
+    padding: 30px 20px;
+    background-color: white;
+    color: black;
+    padding-right: 25px;
+    padding-bottom: 1px;
+    border: 1px solid;
+    border-color: rgb(186, 177, 177);
+    border-radius: 10px;
+}
+
+.office h3{
+    margin-bottom: 10px;
+}
+.office p{
+    margin-bottom: 10px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: large;
+    color: rgb(153, 139, 139);
+}
+hr {
+    display: flex;
+    align-items: center;
+}
+
+.con {
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+.con p {
+    margin-bottom: 5px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.map {
+    background-color: rgb(207, 199, 199);
+    padding-top: 15px;
+    margin-bottom: 20px;
+    padding-bottom: 15px;
+    padding-right: 200px;
+    border-radius: 10px;
+}
+.map p {
+    padding-left: 10px;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+@media (max-width: 1040px) {
+    .navbar{
+        padding: 10px 10px;
+    }
+
+    .mainJR {
+        grid-template-columns: repeat(2 , 1fr);
+    }
+    .buy{
+    padding: 10px 25px;
+    }
+    .add span {
+        font-size: medium;
+    }
+
+}
+
+@media (max-width: 700px) {
+    .navbar{
+        padding: 4x 4px;
+    }
+    .navbar ul {
+        gap: 10px;
+    }
+    .navbar li {
+        font-size: 15px;
+    }
+    .navbar .logo {
+        font-size: 10px;
+    }
+    .btn {
+        padding: 10px 20px;
+    }
+   .card3 {
+    display: inline-block;
+   }
+   .card2 {
+    padding-left: 20px;
+    padding-right: 20px ;
+
+}
+
+input{
+    padding-right: 285px; 
+}
+textarea {
+
+    padding-right: 305px;
+}
+.card2 {
+    padding-left: 10px;
+    display: none;
+}
+.name h1 {
+    font-size: 30px;
+}
+.name p {
+    font-size: smaller;
+}
+
+.sendbtn {
+     padding: 8px 140px;
+}
+.card2 {
+        display: block;         /* Switch from flex to block */
+        padding-left: 20px;     /* Reduce padding so it fits nicely on small screens */
+        padding-right: 20px;
+    }
+    
+    /* Optional: Adds space between the items now that they are stacked */
+    .card2 > * {
+        margin-bottom: 20px; 
+    }
+    .card2 > :last-child {
+        margin-bottom: 0;
+    }
+}
